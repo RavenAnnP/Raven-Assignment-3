@@ -20,7 +20,7 @@ public class UserLoginApp {
 			User loggedInUser = userService.validateLogin(username, password, users);
 			if (loggedInUser != null) {
 				System.out.println("Welcome: " + loggedInUser.getName());
-				return; // Exit program
+				return; 
 			} else {
 				System.out.println("Invalid login, please try again.");
 				attempts++;

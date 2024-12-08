@@ -26,9 +26,9 @@ public class UserService {
 	public User validateLogin(String username, String password, User[] users) {
 		for (User user : users) {
 			if (user.getUsername().equalsIgnoreCase(username) && user.getPassword().equals(password)) {
-				return user; // Successful login
+				return user; 
 			}
 		}
-		return null; // Invalid login
+		return null; 
 	}
 }
